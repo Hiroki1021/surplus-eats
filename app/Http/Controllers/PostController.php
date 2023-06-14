@@ -44,7 +44,7 @@ public function store(Request $request)
 
         $product -> save();
 
-        return redirect()->route('dashboard');
+        return redirect()->route('seller.dashboard');
    
 }
 
