@@ -27,7 +27,9 @@ class MultiAuthTableSeeder extends Seeder
         Seller::create([
             'name' => '管理者',
             'email' => 'admin@admin.admin',
-            'password' => Hash::make('password')
+            'password' => Hash::make('password'),
+            'phone' => '000-0000-0000',
+            'adress' => '福岡県',
         ]);
     }
 }
