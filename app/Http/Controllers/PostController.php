@@ -24,7 +24,9 @@ class PostController extends Controller
     public function detail($id)
     {
         $post = Product::find($id);
+        $seller=$post->seller;
         return view('surplus.detail', compact('post'));
+    }
 
 
     public function sellerIndex()
